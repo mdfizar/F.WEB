@@ -1,0 +1,334 @@
+/*--------GLOBAL------*/
+* {
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-left: 330px;
+  transition: 1s;
+}
+
+/* ---------- HEADER ---------- */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px;
+
+}
+.icon-container span {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.icon-container span:hover {
+  background-color: blue;
+}
+.icon-container span a {
+ color: white;
+ text-decoration: none;
+}
+.icon-container span i {
+  font-size: 20px;
+}
+#side-bar ul li,#side-bar ul li a{
+  list-style: none;
+  text-decoration: none;
+  color:white;
+  padding: 20px 0px;
+}
+
+#side-bar {
+  width: 330px;
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  transition: 1s;
+  color: white;
+  overflow: auto;
+}
+#side-bar div img {
+  width: 100px;
+  border-radius:50%;
+}
+@media (max-width:1130px) {
+  #side-bar { 
+   transform: translate(-100%);
+  
+  }
+  body {
+    padding-left: 0px;
+  }
+}
+/*-------------- TEMPLATE --------------- */
+.template {
+  height: 850px;
+  background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.template .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.template .content h1 {
+  font-size: 5rem;
+}
+/*----------- ABOUT -----------*/
+.card img {
+  height: 350px;
+  object-fit: contain;
+}
+#bio span i {
+  font-size: 25px;
+}
+#fact i {
+  font-size: 40px;
+  color: blue;
+  margin-right: 15px;
+}
+#fact span {
+  font-size: 40px;
+}
+
+/*-------- resume ---------*/
+#resume .text {
+  border-left: 2px solid rgba(140, 18, 255, 0.81);
+  padding-left: 20px;
+  padding-top: 20px;
+  position:relative;
+}
+
+/*------- PROTFOLIO -------*/
+#protfolio {
+  background-color: #f5f8fd;
+}
+#protfolio .store {
+  max-width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#protfolio .store a {
+  text-decoration:none;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 2px;
+}
+#protfolio .store a:hover {
+  color:blue;
+}
+/*-----CARD IS START ---------*/
+.img {
+  width: 100%;
+  height: 250px;
+  position:relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.plus-icon {
+  width: 100%;
+  background-color: rgba(6, 183, 236, 0.82);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -50px;
+  transition: 0.4s;
+  opacity: 0.7;
+  height: 50px;
+}
+.plus-icon span:hover {
+  background-color: rgb(0, 140, 255);
+}
+
+.plus-icon span {
+  width: 50%;
+  height: 100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.plus-icon span a {
+ text-decoration: none;
+ color: #fff;
+}
+.plus-icon span a i {
+  font-size: 25px;
+}
+.img:hover div {
+ bottom: 0px;
+}
+.img:hover .overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 250, 250);
+  position: absolute;
+  opacity: 0.4;
+  top: 0px;
+}
+.img .overlay {
+  transition: 0.4s;
+}
+
+/*----------- service --------------- */
+.my-span {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  border: 10px solid rgb(85, 138, 222);
+  transition: 0.8s;
+
+}
+.my-span i { 
+  font-size: 30px;
+  padding: 10px;
+  transition: 0.8s;
+}
+.my-card:hover .my-span {
+  background-color: rgb(85, 138, 222);
+  border: 10px solid rgb(231, 242, 255);
+}
+.my-card:hover i {
+  color:white;
+}
+#cunting {
+  position:relative;
+  background-image: url("https://bootstrapmade.com/demo/templates/DevFolio/assets/img/counters-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+#cunting .container {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
+#cunting .overlay {
+  width: 100%;
+  height: 100%;
+  background-color:#0078ff;
+  opacity: 0.7;
+}
+#cunting .cunting-container {
+  text-align: center;
+  color: white;
+}
+.cunting-container div {
+  width: 90px;
+  height:90px;
+  border-radius: 50%;
+  margin:auto;
+  border: 10px solid #cad8ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cunting-container div i {
+  color:white;
+  font-size: 35px;
+}
+.cunting-container h1 {
+  margin-top: 16px;
+  color: white;
+}
+
+/*-------- SLIDER -----*/
+#selider {
+  background-color: #f5f8fd;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-item {
+  max-width: 270px;
+  margin: auto;
+  padding: 10px;
+}
+.my-item p:first-child {
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  background-color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  border-radius: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 7px 15px 0
+   rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+.my-item p:first-child::before {
+  content: '';
+  position: absolute;
+  width:0px;
+  height:0px;
+  border-left: 20px solid transparent ;
+  border-right: 20px solid transparent;
+  border-top:30px solid #ffffff;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  bottom: -44px;
+}
+.my-item p:last-child {
+  color: rgb(111, 111, 111);
+  margin-bottom: 20px;
+}
+.my-item .img{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 3rem;
+ 
+}
+.my-item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
