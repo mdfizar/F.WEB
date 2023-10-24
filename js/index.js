@@ -1,3 +1,22 @@
+//==== menu-btn!
+function menuButton(){
+    var button = document.getElementById("change-icon");
+    var icon = button.querySelector ("i");
+  if (icon.className === "bi bi-list") {
+    icon.classList ="bi bi-x";
+  } else {
+    icon.className ="bi bi-list";
+  }
+  var sideBar = document.getElementById("side-bar");
+  if (sideBar.style.transform === "translateX(0%)") {
+    sideBar.style.transform ="translateX(-100%)";
+  } else {
+    sideBar.style.transform ="translateX(0%)";
+  }
+     
+  }
+
+
 //Animation
 AOS.init();
 
